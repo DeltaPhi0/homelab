@@ -4,9 +4,9 @@
 *Last updated: May 26, 2025*
 
 ---
-## ⚡️ Automatic installation
+## Automatic installation
    ### For a quick setup, use my automated script:
-   ### ⚠️ Always inspect scripts before running them!
+   ### Always inspect scripts before running them!
    ```bash
    wget https://raw.githubusercontent.com/DeltaPhi0/homelab/refs/heads/main/media/samba/samba-setup.sh
    chmod +x samba-setup.sh
@@ -33,7 +33,7 @@ rm samba-setup-sh
 </details>
 
 *Note : this script works only if you have a Debian based OS*
-## 🚀 Manual installation
+## Manual installation
 
 ### 1. Install requirements
 ```bash
@@ -69,7 +69,7 @@ sudo systemctl restart smbd
 ```
 ---
 
-## 🌐 Accessing your folder
+## Accessing your folder
 
 ### Connection methods
 #### Windows:  
@@ -82,10 +82,10 @@ sudo systemctl restart smbd
   ```
   smb://[server-IP]
   ```
-## 🔒 Security recommendations
+## Security recommendations
 **Use different passwords for system and Samba users**
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 **Common issues:**
 - **Permission Errors**:  
