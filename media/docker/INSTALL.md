@@ -13,7 +13,7 @@ https://docs.docker.com/engine/install/
 
 ---
 
-## 🔍 Table of Contents
+## Table of Contents
 
 - [Manual Installation](#-manual-installation)
 - [Security Recommendations](#-security-recommendations)
@@ -21,7 +21,7 @@ https://docs.docker.com/engine/install/
 - [Recommended Next Steps](#recommended-next-steps)
 
 
-## 🚀 Manual Installation  
+## Manual Installation  
 
 ### 1. Remove conflicting packages 
 ```bash
@@ -88,12 +88,12 @@ sudo systemctl enable docker
 
 ---
 
-## 🔒 Security recommendations
+## Security recommendations
 **Avoid running containers with the --privileged flag unless necessary**
 
 ---
 
-## 🛠 Troubleshooting
+## Troubleshooting
  **Permission denied?**
 - Log out and back in (or reboot) after adding your user to the docker group.
 - Run groups to confirm you belong to the docker group.
