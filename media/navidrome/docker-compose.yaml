@@ -10,4 +10,4 @@ services:
       ND_SCANSCHEDULE: 1h
     volumes:
       - "/media/navidrome/data:/data"
-      - "/media/navidrome/music:/music:ro"
+      - "/media/navidrome/music:/music/main:ro"
