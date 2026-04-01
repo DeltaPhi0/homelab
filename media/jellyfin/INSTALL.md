@@ -4,9 +4,9 @@
 *Last updated: May 26, 2025*
 
 ---
-## ⚡️ Automatic installation
+## Automatic installation
    ### For those who prefer a one-command installation, I've created an automated bash script that handles most of the process
-   ### ⚠️ Review the code before running any script you find online!
+   ### Review the code before running any script you find online!
    ```bash
    wget https://raw.githubusercontent.com/DeltaPhi0/homelab/refs/heads/main/media/jellyfin/jellyfin-setup.sh
    chmod +x jellyfin-setup.sh
@@ -30,7 +30,7 @@ echo "Jellyfin installation complete. Visit http://[your-IP]:8096"
 </details>
 
 *Note : this script works only if you have a Debian based OS*
-## 🚀 Quick installation
+## Quick installation
 
 ### 1. Install Jellyfin server
 ```bash
@@ -39,7 +39,7 @@ curl https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 
 ---
 
-## 🌐 First time setup
+## First time setup
 
 ### 2. Access Web interface
 1. Open your browser and navigate to:
@@ -61,7 +61,7 @@ http://192.168.0.100:8096
 
 ---
 
-## 🗄️ Media library configuration
+## Media library configuration
 
 ### 4. Prepare media folders
 ```bash
@@ -80,7 +80,7 @@ sudo chown -R $USER:$USER /media/jellyfin  # Set proper permissions
 
 ---
 
-## ⚙️ Post installation setup
+## Post installation setup
 
 ### 6. Add your content
 1. Copy media files to their respective folders:
@@ -98,7 +98,7 @@ While technically supported, **iPhone users should note**:
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 **Common issues:**
 - **Permission Errors**:  
