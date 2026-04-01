@@ -3,7 +3,7 @@
 *Last Updated: May 20, 2025*  
 ![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi%203-CC3542?logo=raspberrypi&logoColor=white)
 
-## 🔍 Table of Contents  
+## Table of Contents  
 [Why This Matters](#-why-this-matters)  
 
 [Hardware Specifications](#-hardware-specifications)  
@@ -22,18 +22,18 @@
 
 [Pro Tips](#-pro-tips)
 
-## 🌟 Why this matters  
+## Why this matters  
 Turn a **€40 Raspberry Pi** into a **secure homelab server** that:  
 - Self-hosts services (VPN/media/files) *without cloud fees*  
 - has solid security (SSH keys, VPN+local access only)  
 - Teaches real sysadmin skills 
 
-## 📦 Hardware specifications
+## Hardware specifications
 - **Device**: Raspberry Pi 3 Model B (1GB RAM)
 - **Storage**: 64GB SD Card
 - **Connection**: USB-to-Micro-USB power + Ethernet
 
-## 🛠️ Initial setup
+## Initial setup
 
 ### 1. OS installation
 1. Use [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
@@ -66,7 +66,7 @@ sudo nmtui
 3. Change subnet to e.g. `192.168.0.1/24` (be sure to not choose a conflicting subnet)
 
 
-## 🔒 SSH security setup
+## SSH security setup
 
 ### 1. Hostname resolution
 ```bash
@@ -87,7 +87,7 @@ sudo nano /etc/ssh/sshd_config
 Uncomment and modify:  
 `#PasswordAuthentication yes` → to → `PasswordAuthentication no`
 
-## 🌐 VPN Configuration
+## VPN Configuration
 
 ### Why Set Up a VPN?
 
@@ -149,13 +149,13 @@ sudo apt install network-manager-openvpn
 2. Connect via GUI interface  
 [If you need additional help](https://www.youtube.com/watch?v=CBJMl9MILbg&t=560s)
 
-## 🎥 Media Server
+## Media Server
 
 **This section in about my self hosted media and development environment, powered by Docker and a mix of awesome tools. Below are the key components, along with links to my tutorials for setting them up!**  
 
 ---
 
-### 🎬 Media & Entertainment
+### Media & Entertainment
 
 - **Jellyfin** – Personal media streaming for movies and TV shows  
 - **Navidrome** (`deluan/navidrome`) – Lightweight music server for streaming across devices  
@@ -163,33 +163,33 @@ sudo apt install network-manager-openvpn
 
 ---
 
-### 📚 Reading & Productivity
+### Reading & Productivity
 
 - **Calibre** – eBook management and server for my digital library  
 
 ---
 
-### 🛠️ Development & Learning
+### Development & Learning
 
 - **NGINX** – Local web development/deployment and reverse proxying  
 - **Dockerized Kali Linux** – Isolated security testing environment *(I avoid running Kali as my main OS. Sticking with Linux Mint/Debian for stability!)*  
 
 ---
 
-### 🧰 Experimented With (But Retired)
+### Experimented With (But Retired)
 
 - **SambaShare** – Retired after switching to direct file access, but great for multi user cloud setups  
 - **Home Assistant + Portainer** – Briefly used for smart home automation *(successfully turned on a smart lightbulb and made people freak out by turning off my smart TV!)*  
 
 ---
 
-### 🐳 Why Docker?
+### Why Docker?
 
 > **I use Docker for isolation, scalability, and easy management. Check out my full Docker setup guide to replicate this stack!**
 
 ---
 
-### 🔗 Media installation guide
+### Media installation guide
 
 **For step-by-step guides to recreate this setup:**  
 
@@ -201,7 +201,7 @@ sudo apt install network-manager-openvpn
 
 *Note: Please follow these steps from top to bottom. I arranged them from easiest to hardest*
 
-## 💾 Backup & recovery
+## Backup & recovery
 1. Before backing up, be sure to shrink partition to minimum possible using either gparted, parted or fdisk
    - e.g. If you have 12.5GB storage, be sure to round it up to the next whole number (in this case, 13GB)
 2. Use **Clonezilla** for system backups, very intuitive and user friendly
@@ -209,7 +209,7 @@ sudo apt install network-manager-openvpn
 4. Store backups on external drive. ALWAYS remember about the [3-2-1](https://www.veeam.com/blog/321-backup-rule.html) rule. <br>
 [For visual learners!](https://www.youtube.com/watch?v=yQ9NpWZ74BU&t=349s)
 
-## 🚨 Important security notes
+## Important security notes
 - Never share your private SSH key
 - Regularly update packages:
   ```bash
@@ -220,7 +220,7 @@ sudo apt install network-manager-openvpn
 - (e.g. I personally share it with my brother and a friend of mine, so they can access to my media too.)
 
 
-## 💡 Pro tips
+## Pro tips
 - `man [command]` is your best friend
 - Use `grep` for quick searches:  
   ```bash
