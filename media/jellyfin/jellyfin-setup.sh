@@ -8,4 +8,4 @@ sudo chown -R $USR:$USR /media/jellyfin
 sudo chmod -R 755 /media/jellyfin
 sudo apt upgrade -y
 rm jellyfin-setup.sh
-echo "Jellyfin installation complete. Visit http://[your-IP]:8096"
+echo "Jellyfin installation complete. Visit http://[your-IP]:8096" 
