@@ -3,7 +3,7 @@
 *Last updated: May 26, 2025*  
 <sub>Tested on Linux. Docker and Docker Compose must be installed.</sub>
 
-## 🚀 Quick installation  
+## Quick installation  
 
 ### 1. Create directories & set permissions  
 ```bash
@@ -45,13 +45,13 @@ docker-compose up -d
 
 ---
 
-## 🌐 Access your music  
+## Access your music  
 - Open in browser: http://[your ip]:4533
 - First user created becomes admin  
 
 ---
 
-## 📱 Mobile Setup (iOS)
+## Mobile Setup (iOS)
 ### 1. Install [Substreamer](https://apps.apple.com/us/app/substreamer/id1012991665)
 ### 2. Connect using 
 ```
@@ -61,7 +61,7 @@ Password: [your-password]
 ```
 ---
 
-## ⭐ Favorites Playlist Setup
+## Favorites Playlist Setup
 ### 1. Download this file, it will automatically save your favorite songs in a playlist of its own
 ```bash
 wget https://raw.githubusercontent.com/DeltaPhi0/homelab/refs/heads/main/media/navidrome/favorites.json -O /media/navidrome/music/favorites.json
